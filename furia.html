@@ -1,0 +1,63 @@
+<html>
+    <body>
+       
+        <style>
+            :root{
+                --ancho:150px
+            }
+            *{
+                max-width: 100%;
+            }
+            .contenedorSuperior{
+                padding: 10px;
+                transform: rotate(180deg);
+                width: var(--ancho);
+                display: flex;
+                flex-direction: column;
+                background-color: rgba(0, 0, 0, 0.838);
+                
+                .contenedor .bolita{
+                    margin: auto;
+                    border: 3px solid black ;
+                    background-color: transparent;
+                    background-color: white;
+                    width: calc(var(--ancho) - 15px);
+                    height: calc(var(--ancho) - 15px);
+                    border-radius: 50% !important;
+                    margin-top: 5px;
+                }
+                .furia{
+                    width: calc(var(--ancho) - 15px);
+                    background:radial-gradient(rgb(99, 237, 99),rgb(49, 209, 49),rgb(1, 29, 1));
+                    position: absolute;
+                    /* top:calc(590px - (var(--ancho) - 15px)); */
+                    /* left: 15px; */
+                    right: 7.5px;
+                    /* border-top-right-radius: 30%;
+                    border-top-left-radius: 25%; */
+                    /* border-radius: 50%; */
+                    /* margin: auto; */
+                    height: 5%;
+                }
+            }
+        </style>
+        <section class="contenedorSuperior">
+            
+            <!-- <div class="furia"></div> -->
+            
+            <div class="contenedor">
+                
+                <div class="bolita"></div>
+                <div class="bolita"></div>
+                <div class="bolita"></div>
+                <div class="bolita"></div>
+                
+            </div>
+            
+            <!-- <main class="contenedor2">
+                
+            </main> -->
+            
+        </section>
+    </body>
+</html>

@@ -1,0 +1,201 @@
+<html>
+    <head>
+        <title>Batalla</title>
+        <link rel="stylesheet" href="CSS/index.css">
+    </head>
+    <body id="campo_batalla">
+        <div class="container ocultarContenedor">
+            <h2 class="title">Pentágono</h2>
+            <span style="background-color: red;position:absolute;top:150;padding:100px"></span>
+            <div id="pentagono" class="shape"></div>
+          </div>
+
+        
+        <section class="troop">
+            <!-- <span class="direccional"></span> -->
+            
+            <article class="visual" >
+                <div class="imagen">
+                    <!-- <img src="https://static.wixstatic.com/media/1c166d_bc2253171114446e90fcef5caff22f3cf000.jpg/v1/fill/w_533,h_1080,al_c,q_85,enc_auto/1c166d_bc2253171114446e90fcef5caff22f3cf000.jpg" alt=""> -->
+                </div>
+                
+                <div class="furia">
+                    <span class="contenedorFuria">
+                        <div class="furiaReal"></div>
+                    </span>
+                    <img class="imagenFull" src="imgs/furia2.png" alt="">
+                </div>
+                <div class="vida">
+                    <span class="contenedorVida">
+                        <div class="vidaReal"></div>
+                    </span>
+                    <img class="imagenFull" src="imgs/furi3.png" alt="">
+                </div>
+            </article>
+            <div class="acciones">
+                <span class="retirar">
+                    <img src="data:image/png;base64,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" alt="">
+                </span>
+                <span class="acampar">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKGF4vBm1KKePqhQR8aaM8N_HsqjZFq1YTKQ&s" alt="">
+                </span>
+                <span class="atacar">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvaTocxT2H3Ujah7kgdVsf7DBTCMJ8SA_dQQ&s" alt="">
+                </span>
+            </div>
+        </section>
+        
+        <section id="puntos"></section>
+
+        <!-- <img src="imgs/furi3.png" alt=""> -->
+    </body>
+
+
+    <script src="comandantes.js"></script>
+
+    <script>
+        let acciones
+        let furia
+        let target
+        
+        let style
+        function mover(target){
+            console.log('seleccionado');
+        }
+        function getCssVar(objetivo,nombreVariable){
+            return getComputedStyle(objetivo).getPropertyValue(nombreVariable)
+        }
+        function setCssVar(objetivo,nombreVar,valor){
+            objetivo.style.setProperty(nombreVar,valor)
+        }
+        function getFatherFromIMageComaner(miTropa){
+            return miTropa.parentNode.parentNode
+        }
+        function ocultarAtributo(atributo){
+            // console.log(atributo);
+            styles=atributo
+
+            if(atributo.style.display=='none'){
+                // console.log(atributo,' debe reaparecer');
+                atributo.style.display=''
+                return 
+            }
+            // console.log(atributo,' debe desaparecer');
+            atributo.style.display='none'
+        }
+        function tropaPresionada(tropa){
+            // alert('presionada')
+            tropa=tropa.target
+
+            console.log('presionado',tropa);
+
+            target=tropa
+            furia=tropa.parentElement.children[1]
+            vida=tropa.parentElement.children[2]
+            acciones=tropa.parentNode.parentElement.children[1]
+            // furia=tropa.parentNode.parentElement.children[1]
+            
+            console.log('cambiar visibilidad');
+            ocultarAtributo(vida)
+            ocultarAtributo(acciones)
+            ocultarAtributo(furia)
+        }
+        let tropas=document.querySelectorAll('.troop .visual .imagen')
+
+        for(let index=0;index<tropas.length;index++){
+            tropas[index].addEventListener('click',tropaPresionada)
+            tropas[index].ondblclick=mover
+        }
+
+        window.onmousemove=function(e){
+            if(!this.hayQueMover){
+                return
+            }
+            // console.log('movido',e)
+        }
+        window.onmouseup=function(e){
+            console.log('up',e)
+            mouseUp=e
+            
+            document.getElementById('puntos').innerHTML+='<div class="coordenada" style="top:'+e.clientY+';left:'+e.clientX+';"></div>'
+
+
+        }
+
+        function generarNuevaCoordenada(coordenada,anchoComandante,tipoCoordenada){
+            let newCoord=coordenada-(anchoComandante/2)
+
+            if(newCoord<0){
+                return 0
+            }
+            let body=document.getElementById('campo_batalla')
+            
+            console.log(tipoCoordenada,'\n  width:',body.clientWidth,'\n  heigth:',body.clientHeight);
+            console.log('coordExtrema:',newCoord+(anchoComandante/2),'\n   NC:',newCoord);
+            if(tipoCoordenada=='x' && newCoord+(anchoComandante)>body.clientWidth){
+                return body.clientWidth-(anchoComandante/2)
+            }
+            if(tipoCoordenada=='y' && newCoord+(anchoComandante)>body.clientHeight){
+                return body.clientHeight-(anchoComandante/2)
+            }
+            return newCoord
+        }
+
+        let mouseUp,mouseDown, miTropa=tropas[0]
+        window.hayQueMover=false
+        window.tropasPorMover=[]
+        
+        
+
+        window.onmousedown=function objetoPresionado(e){
+            mouseDown=e
+            console.log('down',e)
+            if(e.target.classList.contains('imagen')){
+                window.hayQueMover=true
+                if(window.tropasPorMover.length!=0){
+                    window.tropasPorMover=[]
+                }
+                window.tropasPorMover.push(e.target)
+                return
+            }
+            if(window.hayQueMover){
+                let y=e.clientY, x=e.clientX
+                
+                for(let index=0;index<window.tropasPorMover.length;index++){
+                    let padre=getFatherFromIMageComaner(tropasPorMover[index])
+                    let ancho
+                    
+                    // ancho=getCssVar(window.tropasPorMover[index],'--anchoImagen')
+                    ancho=window.tropasPorMover[index].clientWidth
+
+                    let xOrig=getCssVar(padre,'--posicionX')
+                    let yOrig=getCssVar(padre,'--posicionY')
+
+                    let xAbs,yAbs        
+
+                    xAbs=x-xOrig
+                    yAbs=y-yOrig
+
+                    // console.log('xAbs:',xAbs,'__yAbs:',yAbs);
+                    let distancia=Math.sqrt(Math.pow(xAbs,2)+Math.pow(yAbs,2))
+                    distancia=distancia/10
+                    // console.error('distancia:',distancia,'\n    speed:',tropasPorMover[index].comandantes.getTroopSpeed());
+                    let segs=(distancia/tropasPorMover[index].comandantes.getTroopSpeed())
+                    console.error(segs);
+                    padre.style.transitionDuration=segs+'s'
+                    
+                    // console.log('ancho=',ancho);
+                    setCssVar(padre,'--posicionX',generarNuevaCoordenada(x,ancho,'x'))
+                    setCssVar(padre,'--posicionY',generarNuevaCoordenada(y,ancho,'y'))
+                }
+                return
+            }
+            window.hayQueMover=false
+            window.tropasPorMover=[]
+        }
+        let army= new Tropas(100000,new Caballos(1))
+
+        miTropa.comandantes=new ParejaComandantes(new Eilji(),new SunTzu(),army)
+
+    </script>
+</html>
